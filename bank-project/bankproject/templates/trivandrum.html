@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> trivandrum branch</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: auto auto;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        h1{
+          padding-left:500px
+          }
+
+        .img{
+               width :300px;
+                height:300px
+                }
+    </style>
+</head>
+<body>
+<h1>BANK OF SIERRALANE</h1>
+<div class="container">
+    <div>
+       <img class="img" src="{% static 'images/branch.png' %}"  alt="logoimage">
+    </div>
+    <div>
+        <h3>
+    Bank of sierralane is an Indian public sector bank based in Bangalore, India.<br>
+    Established in 1906 at Mangalore by Ammembal Subba Rao Pai.<br>
+    The Bank was nationalized in 1969. Bank of sierralane has offices in London, Dubai and New York also.<br>
+    Bank of sierralane's first acquisition took place in 1961 when it acquired Bank of Kerala. This had been founded in <br>
+    September 1944 and at the time of its acquisition on 20 May 1961 <br>
+    had three branches. The second bank that Canara Bank acquired was Seasia Midland Bank (Alleppey), which had been established on 26 July 1930<br>
+    and had seven branches at the time of its takeover
+</h3>
+    </div>
+</div>
+    <div style="margin-left:500px">
+        <h2 id="Trivandrum"> TRIVANDRUM BRANCH</h2>
+        <table border="1" cellspacing="2" cellpadding="9" class="table">
+            <tbody>
+                    <tr class="specificBackground">
+                        <td>District Name</td>
+                        <td>TRIVANDRUM</td>
+                    </tr>
+                    <tr class="specificBackground">
+                        <td>Branch ID</td>
+                        <td>5678</td>
+                    </tr>
+                    <tr class="specificBackground">
+                        <td>Branch IFSC Code</td>
+                        <td>IDIB000K289</td>
+                    </tr>
+                    <tr class="specificBackground">
+                        <td>Branch Located Area	</td>
+                        <td> Urban</td>
+                    </tr>
+                    <tr>
+                        <td> Branch Timing</td>
+                        <td>10.00 hrs to 5.00 hrs</td>
+                    </tr>
+                    <tr class="specificBackground">
+                        <td>Branch Weekly</td>
+                        <td>ALL SUNDAY&amp; 2ND SATURDAY AND 4TH SATURDAY OF EVERY MONTH</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+</body>
+</html>
