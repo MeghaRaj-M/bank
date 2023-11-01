@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+   .logout{ display: block;
+            margin-left:420px;
+            padding:10px 50px;
+            background-color:red;
+            color:white ;
+            font-weight: bold
+            }
+    h4{margin-left:350px;
+    }
+</style>
+</head>
+<body style= "margin:370px;border:2px solid; padding :25px">
+<form action="{% url 'logout' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="row g-3">
+    <h5>your form is submitted successfully</h5>
+      <div class="col-sm-7">
+                <button class="logout">Log Out</button>
+      </div>
+    </div>
+    </form>
+</body>
+</html>

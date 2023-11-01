@@ -30,7 +30,7 @@
 </style>
 
 </head>
-<form method="post" action="" enctype="multipart/form-data" class="form-control" id="account-form">
+<form method="post" action="{% url 'submit' %}" enctype="multipart/form-data" class="form-control" id="account-form">
     {% csrf_token %}
 
     <label for="name">NAME:</label>
@@ -100,7 +100,7 @@
     <br>
 
     <input type="submit" value="Submit" style="background-color:green"><br>
-    <input type="submit" value="Log Out" style="background-color:red">
+<!--    <input type="submit" value="Log Out" style="background-color:red">-->
 </form>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

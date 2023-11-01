@@ -18,8 +18,11 @@
      </div>
      <div class="col-sm-3">
          <input type ="submit" class="form-control" style="background-color:green;color:black;font-weight: bold;" value="Login"><br>
-             <a href="{% url 'register' %}">Register here!</a>
+         <a href="{% url 'register' %}">Register here!</a>
      </div>
+         {% for msg in messages %}
+         {{msg}}
+         {% endfor %}
 </form>
 </body>
 </html>

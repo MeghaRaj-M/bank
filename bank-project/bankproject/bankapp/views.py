@@ -88,6 +88,10 @@ def get_branches(request):
     return JsonResponse(data, safe=False)
 
 
+def submit(request):
+    return render(request, 'submit.html')
+
+
 def logout(request):
     auth.logout(request)
     return redirect('/')

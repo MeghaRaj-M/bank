@@ -12,6 +12,7 @@ urlpatterns = [
     path('trissur/', views.trissur, name="trissur"),
     path('add_account/', views.add_account, name='add_account'),
     path('get_branches/', views.get_branches, name='get_branches'),
-    path('logout', views.logout, name='logout')
+    path('logout', views.logout, name='logout'),
+    path('submit', views.submit, name='submit')
 
 ]
